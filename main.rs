@@ -1,8 +1,10 @@
 
 mod shuffle;
-mod cube2;
 use shuffle::shuffle::*;
+mod cube2;
 use cube2::shuffle_cube2::*;
+// mod permutation;
+// use permutation::shuffle_permutation::*;
 
 fn print_result(cache: &Cache, result: Option<Vec<usize>>) {
 	if result.is_none() {
@@ -12,7 +14,7 @@ fn print_result(cache: &Cache, result: Option<Vec<usize>>) {
 	let mut list = result.unwrap();
 	list.reverse();
 	for p in list {
-		let (state, code, previous) = cache.0[p];
+		let (state, code, previous) = &cache.0[p];
 		if previous.is_none() {
 			println!("{} ({})", dump_state(&state), code);
 		} else {
