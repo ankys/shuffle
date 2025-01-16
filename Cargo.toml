@@ -1,0 +1,6 @@
+[package]
+name = "shuffle"
+version = "0.1.0"
+authors = ["Atsushi Nakayasu <ankysp@gmail.com>"]
+
+[dependencies]
