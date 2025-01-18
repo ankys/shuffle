@@ -6,8 +6,7 @@ authors = ["Atsushi Nakayasu <ankysp@gmail.com>"]
 [dependencies]
 
 [lib]
-name = "lib"
-path = "src/lib.rs"
+name = "src"
 
 [dev-dependencies]
 criterion = "0.5"
