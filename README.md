@@ -7,6 +7,5 @@ Exhaustive search
 
 ```
 ulimit -s unlimited
-rustc -O main.rs
-time ./main
+time cargo run --release
 ```

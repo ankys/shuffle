@@ -1,7 +1,8 @@
 // shuffle
 pub mod shuffle {
 
-use { State, Operation, STATE_CODE_MAX, OPERATIONS, operate, encode };
+use cube2::shuffle_cube2::{ State, Operation, STATE_CODE_MAX, OPERATIONS, operate, encode };
+// use { State, Operation, STATE_CODE_MAX, OPERATIONS, operate, encode };
 
 pub type Cache = (Vec<(State, usize, Option<(usize, Operation)>)>, Vec<(usize, usize)>);
 pub fn shuffle(initial_state: State) -> Cache {

@@ -4,3 +4,14 @@ version = "0.1.0"
 authors = ["Atsushi Nakayasu <ankysp@gmail.com>"]
 
 [dependencies]
+
+[lib]
+name = "lib"
+path = "src/lib.rs"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "benchmark"
+harness = false
