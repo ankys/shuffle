@@ -28,7 +28,7 @@ pub fn shuffle(initial_state: State) -> Cache {
 		if p >= states.len() {
 			break;
 		}
-		let state = states[p].0.clone();
+		let state = states[p].0;
 		for op in OPERATIONS {
 			let state2 = operate(&state, op);
 			let code2 = encode(&state2);
